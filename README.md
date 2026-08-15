@@ -10,6 +10,8 @@ Global [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) plugi
 | `gemini_chats` | List your Gemini conversation history (title + ID). |
 | `gemini_chat_read` | Read the full content (user turns + Gemini replies) of one conversation. |
 
+The plugin also registers a **Gemini LLM provider** (`gemini-bridge` / model `gemini-web`): select it in the model picker and the conversation is driven by your Gemini Pro web account — and because the model declares `image` input support, **you can paste an image directly into the composer** and Gemini sees it (no extra tool call needed). This works around the harness's hard rule that text-only models reject image input.
+
 ## How it works
 
 - A **bridge script** (`lib/gemini-bridge.mjs`) launches/attaches to **Microsoft Edge** with a dedicated automation profile and a CDP debugging port, drives `gemini.google.com`, uploads files, types prompts, and reads replies.
