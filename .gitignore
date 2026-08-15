@@ -1,0 +1,5 @@
+node_modules/
+*.log
+.edge-profile/
+screen-capture.png
+vision-args.json

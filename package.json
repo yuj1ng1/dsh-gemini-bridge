@@ -1,0 +1,24 @@
+{
+  "name": "dsh-gemini-bridge",
+  "version": "1.0.0",
+  "description": "Global DeepSeek Harness plugin: drive the logged-in Gemini web app (gemini.google.com) via Edge CDP — ask questions, analyze images/files/screens, and read conversation history. Registers gemini_ask / gemini_vision / gemini_screen / gemini_chats / gemini_chat_read.",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "install:global": "node scripts/install-global.mjs"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "cordis",
+    "gemini",
+    "cdp",
+    "plugin"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  }
+}
